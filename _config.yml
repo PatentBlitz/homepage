@@ -1,0 +1,59 @@
+# Site wide configuration
+
+title: "PatentBlitz - Coming soon"
+description: "Intellectual Property Meet AI - Coming soon"
+#if you modify locale please have a look at _data/messages.yml too
+locale: en
+
+tagline: Intellectual Property meet AI
+email: info@patentblitz.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.patentblitz.com" # the base hostname & protocol for your site, e.g. http://example.com
+author:
+  twitter: patentblitz
+
+#Target date in UTC / GMT
+countdown:
+  theme: blue
+  year: 2020
+  month: 3
+  day: 1
+  hour: 0
+  minute: 0
+
+# Site owner
+owner:
+  name: Patentblitz
+  email: info@patentblitz.com
+  twitter: https://twitter.com/patentblitz
+
+
+#seo
+twitter:
+  username: patentblitz
+  card: summary
+
+logo: "https://www.patentblitz.com/assets/ico/favicon.ico"
+
+social:
+  name: Patentblitz
+  links:
+    - https://twitter.com/patentblitz
+    - https://www.linkedin.com/company/blopeur-limited
+
+# Jekyll configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: blue
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
